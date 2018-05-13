@@ -1,0 +1,15 @@
+{application, web_auth,
+ [
+  {description, "User authentication through web services"},
+  {vsn, "0.0.1"},
+  {registered, []},
+  {modules, []},
+  {applications, [
+                  kernel,
+                  stdlib,
+                  octopus,
+                  gun
+                 ]},
+  {mod, { web_auth_app, []}},
+  {env, []}
+ ]}.
